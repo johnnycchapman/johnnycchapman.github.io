@@ -1,0 +1,41 @@
+h1 {
+	text-align: center;
+	
+}
+
+body {
+	height: 100%;
+	background-color: lightblue;
+	//background-image: linear-gradient(to bottom,blue,violet);
+	text-align: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	//margin-top: 200px; 
+}
+
+.button1 {
+	background-color: black;
+	color: white;
+	padding: 15px 50px;
+	margin-top: 300px;
+	cursor: wait;
+
+	border: 2px #00ffff solid;
+	border-radius: 10px;
+}
+
+.button1:hover {
+	background-color: white;
+	color: black;
+	padding: 15px 50px;
+	margin-top: 300px;
+	cursor: wait;
+	border: 2px #00ffff solid;
+	border-radius: 10px;
+}
+
+a.button1 {
+	text-decoration: none;
+	margin-top: 500px;
+}
+
