@@ -14,7 +14,8 @@ body {
 }
 
 
-.resume {
+a {
 	text-decoration: none;
+	font-family: "Arial", Arial, sans-serif; 
 }
 
