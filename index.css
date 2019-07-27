@@ -18,10 +18,10 @@ body {
 a {
 	text-decoration: none;
 	font-family: "Arial", Arial, sans-serif; 
-	color: white;
+	color: black;
 }
 a:hover {
-	color: black;
+	color: white;
 }
 .linkedin {
 	margin-top: 100px;
