@@ -19,4 +19,7 @@ a {
 	font-family: "Arial", Arial, sans-serif; 
 	color: white;
 }
+a:hover {
+	color: black;
+}
 
