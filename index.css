@@ -6,8 +6,7 @@ h1 {
 
 body {
 	height: 100%;
-	background-color: lightblue;
-	//background-image: linear-gradient(to bottom,blue,violet);
+	background-image: linear-gradient(to bottom,gray,white);
 	text-align: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
