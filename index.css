@@ -9,7 +9,7 @@ body {
 	height: 100%;
 	background-image: linear-gradient(to bottom,gray,white);
 	text-align: left;
-	margin-left 500px;
+	margin-right 500px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -25,4 +25,5 @@ a:hover {
 }
 .linkedin {
 	margin-top: 100px;
+	text-align: center;
 }
