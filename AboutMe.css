@@ -11,6 +11,15 @@ h3 {
 	font-family: 'Amatic SC'; 
 }
 
+body {
+	height: 100%;
+	background-image: linear-gradient(to bottom,gray,white);
+	text-align: center;
+	margin-right 500px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
 p {
   font-family: "Arial", Arial, sans-serif; 
 }
