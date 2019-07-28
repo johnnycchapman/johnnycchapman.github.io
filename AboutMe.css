@@ -19,6 +19,11 @@ body {
 	background-attachment: fixed;
 }
 
+img.resize {
+  max-width:50%;
+  max-height:50%;
+}
+
 p {
 	text-align: center;
 	font-family: "Arial", Arial, sans-serif; 
