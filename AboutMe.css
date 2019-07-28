@@ -20,8 +20,8 @@ body {
 }
 
 img.resize {
-  max-width:50%;
-  max-height:50%;
+  max-width: 10%;
+  max-height: 10%;
 }
 
 p {
