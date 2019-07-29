@@ -19,6 +19,12 @@ body {
 	background-attachment: fixed;
 }
 
+a {
+	text-decoration: none;
+	font-family: "Arial", Arial, sans-serif; 
+	color: black;
+}
+
 img.resize {
   max-width: 10%;
   max-height: 10%;
