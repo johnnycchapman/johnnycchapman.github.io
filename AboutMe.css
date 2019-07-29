@@ -25,7 +25,7 @@ body {
 	color: black;
 }
 
-#aboutme {
+a {
 	text-decoration: none;
 	font-family: "Arial", Arial, sans-serif; 
 	color: white;
