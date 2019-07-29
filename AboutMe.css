@@ -19,10 +19,16 @@ body {
 	background-attachment: fixed;
 }
 
-a {
+#home {
 	text-decoration: none;
 	font-family: "Arial", Arial, sans-serif; 
 	color: black;
+}
+
+#aboutme {
+	text-decoration: none;
+	font-family: "Arial", Arial, sans-serif; 
+	color: white;
 }
 
 img.resize {
