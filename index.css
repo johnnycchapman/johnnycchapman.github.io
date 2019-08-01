@@ -29,3 +29,10 @@ a:hover {
 	text-align: center;
 }
 
+#linkedin {
+	padding-left: 10px;
+}
+
+#github {
+	padding-right: 10px;
+}
