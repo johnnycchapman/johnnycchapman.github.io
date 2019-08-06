@@ -5,6 +5,10 @@ h1 {
 	font-size: 40px;
 }
 
+h1:hover {
+	cursor: pointer;
+}
+
 body {
 	height: 100%;
 	background-image: linear-gradient(to bottom,gray,white);
