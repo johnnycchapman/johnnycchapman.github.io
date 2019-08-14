@@ -11,7 +11,7 @@ h1:hover {
 
 body {
 	height: 100%;
-	background-image: linear-gradient(to bottom,white,gray);
+	background-image: linear-gradient(from bottom,white,gray);
 	text-align: center;
 	margin-right 500px;
 	background-repeat: no-repeat;
