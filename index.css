@@ -3,6 +3,7 @@ h1 {
 	text-align: center;
 	font-family: "Arial", Arial, sans-serif;
 	font-size: 40px;
+	color: white;
 }
 
 h1:hover {
@@ -11,7 +12,7 @@ h1:hover {
 
 body {
 	height: 100%;
-	background-image: linear-gradient(to bottom,white,blue);
+	background-image: linear-gradient(to bottom,gray,steelblue);
 	text-align: center;
 	margin-right 500px;
 	background-repeat: no-repeat;
@@ -22,10 +23,10 @@ body {
 a {
 	text-decoration: none;
 	font-family: "Arial", Arial, sans-serif;
-	color: black;
+	color: white;
 }
 a:hover {
-	color: white;
+	color: black;
 }
 
 .medialinks {
