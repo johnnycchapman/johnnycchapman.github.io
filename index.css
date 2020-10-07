@@ -1,7 +1,7 @@
 h1 {
 	margin-top: 100px;
 	text-align: center;
-	font-family: "Arial", Arial, sans-serif; 
+	font-family: "Arial", Arial, sans-serif;
 	font-size: 40px;
 }
 
@@ -11,7 +11,7 @@ h1:hover {
 
 body {
 	height: 100%;
-	background-image: linear-gradient(to bottom,white,gray);
+	background-image: linear-gradient(to bottom,white,blue);
 	text-align: center;
 	margin-right 500px;
 	background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body {
 
 a {
 	text-decoration: none;
-	font-family: "Arial", Arial, sans-serif; 
+	font-family: "Arial", Arial, sans-serif;
 	color: black;
 }
 a:hover {
@@ -38,5 +38,5 @@ a:hover {
 }
 
 #github {
-	
+
 }
