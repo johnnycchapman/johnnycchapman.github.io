@@ -21,27 +21,31 @@ body {
   /*width: 280px;*/
 }
 
-
-/* The popup chat - hidden by default */
-.chat-popup {
+/* Chat container. Hidden default*/
+.chat-container {
+  max-width: 450px;
+  padding: 10px;
+  background-color: rgb(15, 15, 73);
+  border-radius: 20px;
   display: none;
   position: fixed;
-  bottom: 0;
-  right: 15px;
+  bottom: 50px;
+  right: 50px;
   border: 3px solid #f1f1f1;
   z-index: 9;
 }
 
-/* Add styles to the form container */
-.chat-container {
-  max-width: 450px;
-  padding: 10px;
-  background-color: white;
+#iframe1 {
+  border-radius: 20px;
 }
 
 /* Add some hover effects to buttons */
 .chat-container .btn:hover, .chat-button:hover {
   opacity: 1;
+}
+
+h1 {
+  color: white;
 }
 
 
@@ -50,14 +54,18 @@ body {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: red;
-    color:white;
+    background-color: grey;
+    color:black;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     top:-10px;
     right: -10px;
+}
+.close:hover {
+  background-color: red;
+  color:white;
 }
 
 .close:hover {
