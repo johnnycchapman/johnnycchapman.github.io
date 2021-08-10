@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Calibri, sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -18,30 +18,29 @@ body {
   opacity: 0.8;
   transition: opacity 0.3s;
   box-shadow: 0 5px 5px rgba(0,0,0,0.4);
-  /*width: 280px;*/
 }
 
 /* Chat container. Hidden default*/
 .chat-container {
   max-width: 450px;
-  padding: 10px;
-  background-color: rgb(15, 15, 73);
-  border-radius: 20px;
+  /*background-color: #424242;*/
   display: none;
   position: fixed;
   bottom: 50px;
   right: 50px;
-  border: 3px solid #f1f1f1;
+  border: 2px solid lightgray;
   z-index: 9;
 }
 
 #iframe1 {
   padding-bottom: 10px;
-  border-style: none;
+  margin: 10px;
+  /*border-style: solid;*/
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  box-shadow: 5px 5px 5px lightgray;
 }
 
 /* Add some hover effects to buttons */
@@ -49,30 +48,68 @@ body {
   opacity: 1;
 }
 
-h1 {
+p.header {
   color: white;
+  font-size: 18px;
+}
+
+.header-bar {
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: left;
+  background: #424242;
+  color: white;
+  font-size: 30px;
+}
+
+.chat-container .footer {
+  margin-left: 225px;
 }
 
 
 /* Close button */
-.close{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: grey;
-    color: black;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: -10px;
-    right: -10px;
-}
-.close:hover {
-  background-color: red;
-  color:white;
+
+.buttons {
+  position: absolute;
+  background-color: grey;
+  color:black;
+  /*border-radius: 50%;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  right: 0px;
 }
 
-.close:hover {
+.min {
+  right: -30px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ /*.max {
+  right: -30px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+ .close {
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons div:hover {
+  background-color: red;
+  color:white;
   cursor: default;
 }
