@@ -29,6 +29,7 @@ body {
   bottom: 50px;
   right: 50px;
   border: 2px solid lightgray;
+  box-shadow: 5px 5px 5px darkgray;
   z-index: 9;
 }
 
@@ -48,6 +49,7 @@ body {
   opacity: 1;
 }
 
+/*Powered by message at the bottom of chat container*/
 p.header {
   color: white;
   font-size: 18px;
@@ -73,7 +75,6 @@ p.header {
   position: absolute;
   background-color: grey;
   color:black;
-  /*border-radius: 50%;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,14 +91,14 @@ p.header {
   align-items: center;
 }
 
- /*.max {
+ .max {
   right: -30px;
   width: 30px;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-}*/
+}
 
  .close {
   right: 0px;
@@ -113,3 +114,7 @@ p.header {
   color:white;
   cursor: default;
 }
+
+
+
+
