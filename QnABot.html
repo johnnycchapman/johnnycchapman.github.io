@@ -30,11 +30,11 @@
     style='min-width: 425px; width: 50%; min-height: 500px;'
     title="Project Hosts Chat Bot">
   </iframe>
-  <!--
-  <div class="close2" onclick="closeChat()">X</div>-->
+
+<!--Buttons to minimize, maximize, and close-->
   <span class="buttons">
       <div class="min" onclick="minimizeChat()">_</div>
-      <!--<div class="max" onclick="maximizeChat()">+</div>-->
+      <div class="max" onclick="maximizeChat()">+</div>
       <div class="close" onclick="closeChat()">x</div>
   </span>
  
@@ -49,24 +49,28 @@ function openChat() {
   document.getElementById("myChat").style.display = "block";
   document.getElementById("chat-btn").style.display = "none";
 }
+
 function minimizeChat() {
   document.getElementById("myChat").style.display = "none";
   document.getElementById("chat-btn").style.display = "block";
+  document.getElementById('iframe1').style.height = "500px"
 }
-/*
+
 function maximizeChat(){
-  var element = document.getElementById("myDiv");
-  //element.style.width = "1200px";
-  //element.style.height = "800px";
-  var divText = document.getElementById("myChat").outerHTML;
-  var myWindow = window.open('','','width=450,height=800');
+  document.getElementById('iframe1').style.height = "750px"
+  /*var divText = document.getElementById("myChat").outerHTML;
+  var myWindow = window.open('','','width=900,height=1050');
   var doc = myWindow.document;
   doc.open();
   doc.write('<link rel="stylesheet" href="QnABot.css">')
   doc.write(divText);
   doc.close();
-  document.getElementsById("btns").style.display = "none";
-}*/
+  var iframe = $("#iframe1"); 
+  var newWindow = window.open(iframe.attr(src), 'Dynamic Popup', 'height=' + iframe.height() + ', width=' + iframe.width() + 'scrollbars=auto, resizable=no, location=no, status=no');
+  newWindow.document.write(iframe[0].outerHTML);
+  newWindow.document.close();
+  iframe[0].outerHTML = ''; // to remove iframe in page.*/
+}
 
 function closeChat() {
   document.getElementById("myChat").style.display = "none";
