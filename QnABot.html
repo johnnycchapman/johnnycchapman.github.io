@@ -57,13 +57,14 @@ function minimizeChat() {
 }
 
 function maximizeChat(){
+  doc.write('<link rel="stylesheet" href="QnABot.css">')
   document.getElementById('iframe1').style.width = "625px"
   document.getElementById('iframe1').style.height = "700px"
   /*var divText = document.getElementById("myChat").outerHTML;
   var myWindow = window.open('','','width=900,height=1050');
   var doc = myWindow.document;
   doc.open();
-  doc.write('<link rel="stylesheet" href="QnABot.css">')
+  
   doc.write(divText);
   doc.close();
   var iframe = $("#iframe1"); 
