@@ -57,28 +57,13 @@ function minimizeChat() {
 }
 
 function maximizeChat(){
-  //doc.write('<link rel="stylesheet" href="QnABot.css">')
-  document.getElementById('iframe1').style.width = "625px"
   document.getElementById('iframe1').style.height = "700px"
-  /*var divText = document.getElementById("myChat").outerHTML;
-  var myWindow = window.open('','','width=900,height=1050');
-  var doc = myWindow.document;
-  doc.open();
-  
-  doc.write(divText);
-  doc.close();
-  var iframe = $("#iframe1"); 
-  var newWindow = window.open(iframe.attr(src), 'Dynamic Popup', 'height=' + iframe.height() + ', width=' + iframe.width() + 'scrollbars=auto, resizable=no, location=no, status=no');
-  newWindow.document.write(iframe[0].outerHTML);
-  newWindow.document.close();
-  iframe[0].outerHTML = ''; // to remove iframe in page.*/
 }
 
 function closeChat() {
   document.getElementById("myChat").style.display = "none";
   document.getElementById("chat-btn").style.display = "none";
 }
-
 
 </script>
 
