@@ -23,7 +23,6 @@ body {
 /* Chat container. Hidden default*/
 .chat-container {
   max-width: 450px;
-  /*background-color: #424242;*/
   display: none;
   position: fixed;
   bottom: 50px;
