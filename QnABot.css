@@ -33,13 +33,13 @@ body {
   z-index: 9;
 }
 
+/* Chat container iframe (actual chat window) */
 #iframe1 {
   padding-bottom: 10px;
   margin: 10px;
-  /*border-style: solid;*/
-  /*top: 0;*/
+  top: 0;
   bottom: 50;
-  /*left: 0;*/
+  left: 0;
   right: 50;
   box-shadow: 5px 5px 5px lightgray;
 }
@@ -69,7 +69,7 @@ p.header {
 }
 
 
-/* Close button */
+/* Minimize, Maximize, and Close buttons */
 
 .buttons {
   position: absolute;
