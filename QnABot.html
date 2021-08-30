@@ -10,43 +10,41 @@
 
 <body>
 
-<h2>Popup Chat Window</h2>
-<p>Click on the button at the bottom of this page to open the chat form.</p>
-<p>Note that the button and the form is fixed - they will always be positioned to the bottom of the browser window.</p>
-
-<!--Chat button-->
-<button class="chat-button" onclick="openChat()" id="chat-btn">
-  <!--<i class="material-icons"> comment </i>-->
-  Q&A
-</button>
-
-
-<!--Chat container with chat bot interface inside-->
-<div class="chat-container" id="myChat">
-  <div class="header-bar">
-    <p class="header">Chat with us!</p>
+  <h2>Popup Chat Window</h2>
+  <p>Click on the button at the bottom of this page to open the chat form.</p>
+  <p>Note that the button and the form is fixed - they will always be positioned to the bottom of the browser window.</p>
+  
+  <!--Chat button-->
+  <button class="chat-button" onclick="openChat()" id="chat-btn">
+    <!--<i class="material-icons"> comment </i>-->
+    Q&A
+  </button>
+  
+  <!--Chat container with chat bot interface inside-->
+  <div class="chat-container" id="myChat">
+    <div class="header-bar">
+      <p class="header">Chat with us!</p>
+    </div>
+    
+    <iframe id='iframe1'
+      src='https://webchat.botframework.com/embed/phchatbotapp?s=qpdVDB2PCbQ.qF-Z3_wuoGYduEmhY_ObAT6-LfVCGlMcxG12zoZpwfk'  
+      style='min-width: 425px; width: 50%; min-height: 500px;'
+      title="Project Hosts Chat Bot">
+    </iframe>
+    
+  <!---->
+  <!--Buttons to minimize, maximize, and close-->
+    <span class="buttons">
+        <div class="min" onclick="minimizeChat()">_</div>
+        <div class="close" onclick="closeChat()">x</div>
+    </span>
+   
+    <p class="footer">Powered by Azure Bot Services</p>
   </div>
   
-
-  <iframe id='iframe1'
-    src='https://webchat.botframework.com/embed/PH2019TestWebBot?s=A1Ayq9Ruh4E.3lR0dkyD3zZJb087fL9k7M5ZnRBuWxFk__v8hSEJAx4'
-    style='min-width: 425px; width: 50%; min-height: 500px;'
-    title="Project Hosts Chat Bot">
-  </iframe>
-
-<!--Buttons to minimize, maximize, and close-->
-  <span class="buttons">
-      <div class="min" onclick="minimizeChat()">_</div>
-      <div class="max" onclick="maximizeChat()">+</div>
-      <div class="close" onclick="closeChat()">x</div>
-  </span>
- 
-  <p class="footer">Powered by Azure Bot Services</p>
-</div>
-
-
-<!--Set chat container and button displays on click-->
-
-
-</body>
-</html>
+  
+  <!--Set chat container and button displays on click-->
+  
+  
+  </body>
+  </html>
