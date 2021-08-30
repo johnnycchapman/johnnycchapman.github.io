@@ -1,6 +1,5 @@
 body {
   font-family: Calibri, sans-serif;
-  background-color: #0e589e;
 }
 * {
   box-sizing: border-box;
@@ -11,7 +10,7 @@ body {
   position: fixed;
   right: 50px;
   bottom: 50px;
-  background: dodgerblue;
+  background: midnightblue;
   color: white;
   width: 50px;
   height: 50px;
@@ -89,6 +88,7 @@ p.header {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-right: 0.5px solid darkgray;
 }
 
  .max {
@@ -114,7 +114,3 @@ p.header {
   color:white;
   cursor: default;
 }
-
-
-
-
