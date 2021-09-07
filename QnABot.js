@@ -1,15 +1,32 @@
 function openChat() {
-    document.getElementById("myChat").style.display = "block";
-    document.getElementById("chat-btn").style.display = "none";
-  }
+  document.getElementById("azure-qna-bot").style.display = "block";
+  document.getElementById("qna-chat-btn").style.display = "none";
+}
+
+function minimizeChat() {
+  document.getElementById("azure-qna-bot").style.display = "none";
+  document.getElementById("qna-chat-btn").style.display = "block";
+  document.getElementById('chat-bot-iframe').style.height = "500px"
+}
+
+function closeChat() {
+  document.getElementById("azure-qna-bot").style.display = "none";
+  document.getElementById("qna-chat-btn").style.display = "none";
+}
+
+function openWin() {
+  var divText = document.getElementById("azure-qna-bot").innerHTML;
+  popup = window.open('', '', 'width=480,height=650');
+  var doc = popup.document;
+  doc.open();
+  doc.write('<html><head> \
+    <title>Project Hosts Bot</title> \
+    <link rel="stylesheet" type="text/css" href="test-window.css"> \
+    </head><body>');
+  //doc.write($("#azure-qna-bot").outerHTML());
+  doc.write(divText);
+  doc.write('</body></html>');
+  doc.close();
+}
+
   
-  function minimizeChat() {
-    document.getElementById("myChat").style.display = "none";
-    document.getElementById("chat-btn").style.display = "block";
-    document.getElementById('iframe1').style.height = "500px"
-  }
-  
-  function closeChat() {
-    document.getElementById("myChat").style.display = "none";
-    document.getElementById("chat-btn").style.display = "none";
-  }

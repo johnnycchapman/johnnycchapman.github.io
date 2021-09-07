@@ -4,36 +4,25 @@ body {
 * {
   box-sizing: border-box;
 }
-
-/* Button used to open the chat form - fixed at the bottom of the page */
-.chat-button {
-  position: fixed;
-  right: 50px;
-  bottom: 50px;
-  background: midnightblue;
-  color: white;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  opacity: 0.8;
-  transition: opacity 0.3s;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+ 
+#bot-text {
+  text-decoration: none;
 }
 
 /* Chat container. Hidden default*/
-.chat-container {
+#azure-qna-bot {
   max-width: 450px;
   display: none;
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 10px;
+  right: 150px;
   border: 2px solid lightgray;
   box-shadow: 5px 5px 5px darkgray;
-  z-index: 9;
+  z-index: 7;
 }
 
 /* Chat container iframe (actual chat window) */
-#iframe1 {
+#chat-bot-iframe {
   padding-bottom: 10px;
   margin: 10px;
   top: 0;
@@ -41,6 +30,8 @@ body {
   left: 0;
   right: 50;
   box-shadow: 5px 5px 5px lightgray;
+  position: relative;
+  z-index: 9;
 }
 
 /* Add some hover effects to buttons */
@@ -49,12 +40,12 @@ body {
 }
 
 /*Powered by message at the bottom of chat container*/
-p.header {
+#chat-header-text {
   color: white;
   font-size: 18px;
 }
 
-.header-bar {
+#chat-header {
   margin-top: -10px;
   margin-bottom: 10px;
   margin-left: -10px;
@@ -67,14 +58,14 @@ p.header {
   z-index: 10;
 }
 
-.chat-container .footer {
-  margin-left: 225px;
+#chat-footer {
+  padding-left: 225px;
 }
 
 
 /* Minimize, Maximize, and Close buttons */
 
-.buttons {
+#chat-bot-btns {
   position: absolute;
   background-color: grey;
   color:black;
@@ -85,7 +76,7 @@ p.header {
   right: 0px;
 }
 
-.min {
+#chat-min-btn {
   right: -30px;
   width: 30px;
   height: 30px;
@@ -95,16 +86,8 @@ p.header {
   border-right: 0.5px solid darkgray;
 }
 
- .max {
-  right: -30px;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
- .close {
+#chat-close-btn {
   right: 0px;
   width: 30px;
   height: 30px;
@@ -113,7 +96,7 @@ p.header {
   align-items: center;
 }
 
-.buttons div:hover {
+#chat-bot-btns div:hover {
   background-color: red;
   color:white;
   cursor: default;

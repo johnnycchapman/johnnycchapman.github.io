@@ -1,50 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
-  <link rel="stylesheet" href="QnABot.css">
-  <script type="text/javascript" src="jquery-3.3.1.js"></script>
-  <script src="QnABot.js"></script>
-</head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="QnABot.css">
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script src="QnABot.js"></script>
+    <script>
+      function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+      }
+    </script>
+  </head>
+    
+ <body>   
+    <!--FAQ Link in header-->
+    <a href="#" id="bot-text" onclick="openWin()">
+    FAQ
+    </a>
 
-<body>
-
-  <h2>Popup Chat Window</h2>
-  <p>Click on the button at the bottom of this page to open the chat form.</p>
-  <p>Note that the button and the form is fixed - they will always be positioned to the bottom of the browser window.</p>
-  
-  <!--Chat button-->
-  <button class="chat-button" onclick="openChat()" id="chat-btn">
-    <!--<i class="material-icons"> comment </i>-->
-    Q&A
-  </button>
-  
-  <!--Chat container with chat bot interface inside-->
-  <div class="chat-container" id="myChat">
-    <div class="header-bar">
-      <p class="header">Chat with us!</p>
+    <!--Chat container with chat bot interface inside-->
+    <div class="chat-container" id="azure-qna-bot">
+      <div class="header-bar" id="chat-header">
+        <p class="header" id="chat-header-text">Chat with us!</p>
+      </div>
+      
+      <iframe id='chat-bot-iframe'
+        src='https://webchat.botframework.com/embed/phchatbotapp?s=qpdVDB2PCbQ.qF-Z3_wuoGYduEmhY_ObAT6-LfVCGlMcxG12zoZpwfk'  
+        style='min-width: 425px; width: 50%; min-height: 500px;'
+        title="Project Hosts Chat Bot">
+      </iframe>
+      <!--
+        frameborder="0" 
+        scrolling="no" 
+        onload="resizeIframe(this)"
+      -->
+     
+      <p class="footer" id="chat-footer">Powered by Azure Bot Services</p>
     </div>
-    
-    <iframe id='iframe1'
-      src='https://webchat.botframework.com/embed/phchatbotapp?s=qpdVDB2PCbQ.qF-Z3_wuoGYduEmhY_ObAT6-LfVCGlMcxG12zoZpwfk'  
-      style='min-width: 425px; width: 50%; min-height: 500px;'
-      title="Project Hosts Chat Bot">
-    </iframe>
-    
-  <!---->
-  <!--Buttons to minimize, maximize, and close-->
-    <span class="buttons">
-        <div class="min" onclick="minimizeChat()">_</div>
-        <div class="close" onclick="closeChat()">x</div>
-    </span>
-   
-    <p class="footer">Powered by Azure Bot Services</p>
-  </div>
-  
-  
-  <!--Set chat container and button displays on click-->
-  
-  
-  </body>
-  </html>
+
+
+
+</body>
+</html>
+
