@@ -11,32 +11,16 @@ body {
 
 /* Chat container. Hidden default*/
 #azure-qna-bot {
-  max-width: 450px;
   display: none;
-  position: fixed;
-  bottom: 10px;
-  right: 150px;
   border: 2px solid lightgray;
   box-shadow: 5px 5px 5px darkgray;
-  z-index: 7;
 }
 
 /* Chat container iframe (actual chat window) */
 #chat-bot-iframe {
-  padding-bottom: 10px;
-  margin: 10px;
-  top: 0;
-  bottom: 50;
-  left: 0;
-  right: 50;
+  right: 10px;
+  bottom: 10px;
   box-shadow: 5px 5px 5px lightgray;
-  position: relative;
-  z-index: 9;
-}
-
-/* Add some hover effects to buttons */
-.chat-container .btn:hover, .chat-button:hover {
-  opacity: 1;
 }
 
 /*Powered by message at the bottom of chat container*/
@@ -55,49 +39,9 @@ body {
   background: #424242;
   color: white;
   font-size: 30px;
-  z-index: 10;
 }
 
 #chat-footer {
-  padding-left: 225px;
-}
-
-
-/* Minimize, Maximize, and Close buttons */
-
-#chat-bot-btns {
-  position: absolute;
-  background-color: grey;
-  color:black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0px;
-  right: 0px;
-}
-
-#chat-min-btn {
-  right: -30px;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-right: 0.5px solid darkgray;
-}
-
-
-#chat-close-btn {
-  right: 0px;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#chat-bot-btns div:hover {
-  background-color: red;
-  color:white;
-  cursor: default;
+  position: fixed;
+  right: 20px;
 }

@@ -21,7 +21,7 @@ function openWin() {
   doc.open();
   doc.write('<html><head> \
    <title>Project Hosts Bot</title> \
-   <link rel="stylesheet" type="text/css" href="https://gitcdn.link/repo/johnnycchapman/johnnycchapman.github.io/master/QnABot.css"> \
+   <link rel="stylesheet" type="text/css" href="QnABot.css"> \
    </head><body>');
   //doc.write($("#azure-qna-bot").outerHTML());
   doc.write(divText);
