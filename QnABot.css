@@ -29,6 +29,7 @@ body {
   right: 50px;
   border: 2px solid lightgray;
   box-shadow: 5px 5px 5px darkgray;
+  overflow: auto;
   z-index: 9;
 }
 
