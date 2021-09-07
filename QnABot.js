@@ -16,17 +16,16 @@ function closeChat() {
 
 function openWin() {
   var divText = document.getElementById("azure-qna-bot").innerHTML;
-  popup = window.open('', '', 'width=480,height=650');
+  popup = window.open('', '', 'width=500,height=650');
   var doc = popup.document;
   doc.open();
   doc.write('<html><head> \
-    <title>Project Hosts Bot</title> \
-    <link rel="stylesheet" type="text/css" href="test-window.css"> \
-    </head><body>');
+   <title>Project Hosts Bot</title> \
+   <link rel="stylesheet" type="text/css" href="https://gitcdn.link/repo/johnnycchapman/johnnycchapman.github.io/master/QnABot.css"> \
+   </head><body>');
   //doc.write($("#azure-qna-bot").outerHTML());
   doc.write(divText);
   doc.write('</body></html>');
   doc.close();
 }
-
   
