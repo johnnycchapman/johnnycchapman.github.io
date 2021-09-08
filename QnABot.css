@@ -12,8 +12,7 @@ body {
 /* Chat container. Hidden default*/
 #azure-qna-bot {
   display: none;
-  border: 2px solid lightgray;
-  box-shadow: 5px 5px 5px darkgray;
+  max-width: 450px;
 }
 
 /* Chat container iframe (actual chat window) */
@@ -41,5 +40,5 @@ body {
 
 #chat-footer {
   position: fixed;
-  right: 20px;
+  right: 5%;
 }
