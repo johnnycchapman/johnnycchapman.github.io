@@ -7,7 +7,6 @@ function openWin() {
    <title>Project Hosts Bot</title> \
    <link rel="stylesheet" type="text/css" href="QnABot.css"> \
    </head><body>');
-  //doc.write($("#azure-qna-bot").outerHTML());
   doc.write(divText);
   doc.write('</body></html>');
   doc.close();
