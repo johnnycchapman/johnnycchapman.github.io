@@ -63,7 +63,8 @@ ul li {
     /*padding-left: 500px;
     padding-top: 50px;*/
     position: fixed;
-    left: 20%;
+    /*left: 20%;*/
+    text-align: center;
     top: 15%;
     font-weight: lighter;
   }
