@@ -60,7 +60,11 @@ ul li {
   .topnav a img:hover {
     opacity: 50%;
   }
-
+  body {
+    background-image: url("https://github.com/johnnycchapman/johnnycchapman.github.io/blob/master/WebsiteBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .about-text {
     font-size: 50px;
     font-family: 'Raleway';
