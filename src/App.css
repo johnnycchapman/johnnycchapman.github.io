@@ -1,0 +1,17 @@
+.app-container {
+  background-color: #141414;
+  color: white;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.button-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
