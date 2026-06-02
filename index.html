@@ -3,8 +3,31 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>johnny — lnk.bio/johnnychapman</title>
+<title>Johnny Chapman</title>
 <meta name="description" content="On the Hour News · Wrightsville Beach Surf Bot · Comfrt · LinkedIn" />
+
+<!-- Open Graph (iMessage, Slack, Discord, LinkedIn, Facebook, etc.) -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://johnnycchapman.github.io/" />
+<meta property="og:title" content="Johnny Chapman" />
+<meta property="og:description" content="Tech / Photography / Travel — links and projects from Wilmington, NC." />
+<meta property="og:image" content="https://johnnycchapman.github.io/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Johnny Chapman — J monogram on a dark aurora background" />
+<meta property="og:site_name" content="johnnychapman" />
+
+<!-- Twitter / X cards -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Johnny Chapman" />
+<meta name="twitter:description" content="Tech / Photography / Travel — links and projects from Wilmington, NC." />
+<meta name="twitter:image" content="https://johnnycchapman.github.io/og-image.png" />
+
+<!-- iOS home-screen icon (rendered when saved to Home Screen on iOS) -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+<!-- SVG favicon matching the J avatar -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><radialGradient id='g' cx='10' cy='10' r='26' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='%233a4a5e'/><stop offset='0.6' stop-color='%231a1f28'/><stop offset='1' stop-color='%230c1014'/></radialGradient></defs><circle cx='16' cy='16' r='15' fill='url(%23g)' stroke='%236ee7c5' stroke-opacity='0.35' stroke-width='0.6'/><text x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='20' fill='%23f5f3ef'>J</text></svg>" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +44,9 @@
     --ink-1: #c9c6bf;
     --ink-2: #7c7973;
     --ink-3: #4a4844;
-    --accent: #6ee7c5;    /* coastal mint */
-    --accent-2: #f0b67f;  /* warm sand */
-    --accent-3: #7aa7ff;  /* atlantic */
+    --accent: #6ee7c5;
+    --accent-2: #f0b67f;
+    --accent-3: #7aa7ff;
     --radius: 14px;
   }
 
@@ -42,7 +65,6 @@
     line-height: 1.5;
   }
 
-  /* Aurora gradient mesh background */
   .aurora {
     position: fixed;
     inset: 0;
@@ -75,7 +97,6 @@
     50% { transform: translate(60px, 40px) scale(1.1); }
   }
 
-  /* Grain overlay */
   .grain {
     position: fixed;
     inset: 0;
@@ -86,7 +107,6 @@
     background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
   }
 
-  /* Page frame */
   .wrap {
     position: relative;
     z-index: 2;
@@ -98,10 +118,9 @@
     flex-direction: column;
   }
 
-  /* Top meta bar */
   .meta {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;
@@ -112,22 +131,7 @@
     opacity: 0;
     animation: fadeIn 0.8s ease-out 0.1s forwards;
   }
-  .meta .dot {
-    display: inline-block;
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--accent);
-    box-shadow: 0 0 10px var(--accent);
-    margin-right: 7px;
-    vertical-align: middle;
-    animation: pulse 2.4s ease-in-out infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 0.5; }
-    50% { opacity: 1; }
-  }
 
-  /* Profile */
   .profile {
     text-align: center;
     margin-bottom: 56px;
@@ -196,7 +200,6 @@
     margin: 0 8px;
   }
 
-  /* Section label */
   .section-label {
     font-family: 'JetBrains Mono', monospace;
     font-size: 10px;
@@ -217,7 +220,6 @@
     background: var(--line);
   }
 
-  /* Links */
   .links {
     display: flex;
     flex-direction: column;
@@ -309,40 +311,6 @@
     transform: translate(3px, -3px);
   }
 
-  /* Stats / premium strip */
-  .stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1px;
-    background: var(--line);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    overflow: hidden;
-    margin-bottom: 40px;
-    opacity: 0;
-    animation: fadeIn 0.8s ease-out 1s forwards;
-  }
-  .stat {
-    background: var(--bg-1);
-    padding: 16px 12px;
-    text-align: center;
-  }
-  .stat-val {
-    font-family: 'Instrument Serif', serif;
-    font-size: 22px;
-    color: var(--ink-0);
-    line-height: 1;
-    margin-bottom: 4px;
-  }
-  .stat-lab {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 9px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--ink-2);
-  }
-
-  /* Footer */
   .footer {
     margin-top: auto;
     padding-top: 32px;
@@ -384,8 +352,7 @@
 <div class="wrap">
 
   <div class="meta">
-    <span><span class="dot"></span>Online</span>
-    <span id="loc">Wilmington · NC</span>
+    <span>Wilmington · NC</span>
   </div>
 
   <section class="profile">
@@ -474,28 +441,6 @@
   </footer>
 
 </div>
-
-<script>
-  // Local time
-  function updateTime() {
-    const now = new Date();
-    const t = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
-    document.getElementById('time').textContent = t;
-  }
-  updateTime();
-  setInterval(updateTime, 30000);
-
-  // Animated visit counter (cosmetic premium-style stat)
-  const visitEl = document.getElementById('visits');
-  const target = 2847;
-  let n = 0;
-  const step = Math.max(1, Math.floor(target / 60));
-  const tick = setInterval(() => {
-    n = Math.min(target, n + step);
-    visitEl.textContent = n.toLocaleString();
-    if (n >= target) clearInterval(tick);
-  }, 24);
-</script>
 
 </body>
 </html>
