@@ -112,24 +112,10 @@
     z-index: 2;
     max-width: 520px;
     margin: 0 auto;
-    padding: 56px 28px 80px;
+    padding: 96px 28px 80px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-  }
-
-  .meta {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink-2);
-    margin-bottom: 64px;
-    opacity: 0;
-    animation: fadeIn 0.8s ease-out 0.1s forwards;
   }
 
   .profile {
@@ -337,9 +323,8 @@
   @keyframes rise { to { opacity: 1; transform: translateY(0); } }
 
   @media (max-width: 480px) {
-    .wrap { padding: 36px 20px 60px; }
+    .wrap { padding: 64px 20px 60px; }
     .name { font-size: 36px; }
-    .meta { margin-bottom: 44px; }
     .profile { margin-bottom: 44px; }
   }
 </style>
@@ -350,10 +335,6 @@
 <div class="grain"></div>
 
 <div class="wrap">
-
-  <div class="meta">
-    <span>Wilmington · NC</span>
-  </div>
 
   <section class="profile">
     <div class="avatar">J</div>
